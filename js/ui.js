@@ -1120,7 +1120,7 @@ $.fn.Uicalendar = function(){
 		var border3Radius = Math.ceil(border3Raidus.width());
 		var radiusNumber = Math.ceil(Border3Width / border3Radius);
 
-		for(var i = 0; i < radiusNumber; i++){
+		for(var i = 0; i < 49; i++){
 			var radiusDiv  = $('<div class="ui-calendar-border3Radius"></div>');
 			calendarBorder3.append(radiusDiv);
 		}
@@ -1168,7 +1168,7 @@ $.fn.Uicalendar = function(){
 
 			for(var i = 1 ; i <=totalDay ;i++){
 				if(i != 1){
-					days.eq(i).text(i);
+					days.eq(firstWeekDay).text(i);
 				}else{
 					days.eq(firstWeekDay).text(i);
 				}
