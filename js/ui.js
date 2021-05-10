@@ -1120,7 +1120,7 @@ $.fn.Uicalendar = function(){
 		var border3Radius = Math.ceil(border3Raidus.width());
 		var radiusNumber = Math.ceil(Border3Width / border3Radius);
 
-		for(var i = 0; i < 49; i++){
+		for(var i = 0; i < radiusNumber; i++){
 			var radiusDiv  = $('<div class="ui-calendar-border3Radius"></div>');
 			calendarBorder3.append(radiusDiv);
 		}
@@ -1144,7 +1144,7 @@ $.fn.Uicalendar = function(){
 		function addDiv(){
 			var weeks = ['日','月','火','水','木','金','土'];
 
-			for(i=0; i < gridNumber; i++){
+			for(i=0; i < 49; i++){
 				if(i < 7){
 					var grids = $('<div class="ui-calendar-week"><span>'+weeks[i]+'</span></div>');
 					weekAndDays.append(grids);
